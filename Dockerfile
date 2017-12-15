@@ -13,4 +13,6 @@ RUN dep ensure
 
 RUN go build
 
+RUN mv oauth2_proxy /usr/local/bin
+
 ENTRYPOINT ["oauth2_proxy"]
